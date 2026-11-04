@@ -1,0 +1,26 @@
+VERSION "2.0"
+
+NS_ :
+
+BS_:
+
+BU_: TestEnvironment BCM WiperMotor
+
+BO_ 256 BCM_INPUTS: 8 TestEnvironment
+ SG_ IgnitionStatus : 0|1@1+ (1,0) [0|1] "" BCM
+ SG_ WiperSwitch : 1|2@1+ (1,0) [0|3] "" BCM
+
+BO_ 257 WIPER_FEEDBACK: 8 WiperMotor
+ SG_ WiperHomePosition : 0|1@1+ (1,0) [0|1] "" BCM
+
+BO_ 512 BCM_OUTPUTS: 8 BCM
+ SG_ WiperMotorCommand : 0|1@1+ (1,0) [0|1] "" WiperMotor,TestEnvironment
+ SG_ WiperStatus : 1|2@1+ (1,0) [0|3] "" TestEnvironment
+
+VAL_ 256 IgnitionStatus 0 "OFF" 1 "ON";
+VAL_ 256 WiperSwitch 0 "OFF" 1 "INTERMITTENT" 2 "LOW" 3 "HIGH";
+
+VAL_ 257 WiperHomePosition 0 "NOT_HOME" 1 "HOME";
+
+VAL_ 512 WiperMotorCommand 0 "OFF" 1 "ON";
+VAL_ 512 WiperStatus 0 "PARKED" 1 "WIPING" 2 "WAITING";

@@ -344,3 +344,22 @@ It is intended as a learning and portfolio project demonstrating automotive ECU 
 For detailed requirement verification and CAN trace evidence, see:
 
 `reports/wiper_validation_report.md`
+
+## Current Limitations and Future Work
+
+The current project focuses on the intermittent wiper function and requirement-based CAN verification using a simplified software bench.
+
+Current limitations include:
+
+- LOW and HIGH wiper modes are defined in the DBC but are not implemented in the BCM model.
+- BCM output messages are event-driven rather than cyclic.
+- Fault scenarios such as motor stall, missing feedback, and CAN message timeout are outside the current test scope.
+- Tests are implemented as standalone Python scripts rather than through a shared pytest-based test framework.
+
+Possible future improvements include:
+
+- implementing LOW and HIGH wiping modes;
+- adding negative and fault-injection test cases;
+- refactoring common test setup using pytest fixtures;
+- adding automated test execution through GitHub Actions;
+- adding CAN timeout and diagnostic behavior.

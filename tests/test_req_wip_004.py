@@ -696,7 +696,7 @@ def run_test():
 
     finally:
 
-        system_stop_event = threading.Event()
+        system_stop_event.set()
 
 
         if bcm_thread.is_alive():

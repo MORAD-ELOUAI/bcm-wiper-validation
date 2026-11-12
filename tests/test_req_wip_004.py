@@ -21,7 +21,7 @@ TRACE_FILE = (
 
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from bcm_TheSimulator import run_bcm
+from bcm_simulator import run_bcm
 from wiper_motor_model import run_wiper_motor
 from can_trace_logger import run_can_logger
 

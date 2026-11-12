@@ -221,8 +221,10 @@ traces/
 
 ## Project Structure
 
-```text
 bcm_wiper_validation/
+│
+├── README.md
+├── requirements.txt
 │
 ├── dbc/
 │   └── bcm_wiper.dbc
@@ -247,10 +249,8 @@ bcm_wiper_validation/
 │   ├── TC-WIP-003_trace.csv
 │   └── TC-WIP-004_trace.csv
 │
-├── reports/
-│   └── wiper_validation_report.md
-│
-└── README.md
+└── reports/
+    └── wiper_validation_report.md
 ```
 
 ---

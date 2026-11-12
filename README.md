@@ -265,14 +265,6 @@ bcm_wiper_validation/
 
 ---
 
-## Running a Test
-
-- Python 3.11
-- python-can
-- cantools
-- Python standard libraries: threading, pathlib, csv, time
-
----
 
 ## Running a Test
 

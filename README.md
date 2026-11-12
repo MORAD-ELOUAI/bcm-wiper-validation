@@ -221,6 +221,7 @@ traces/
 
 ## Project Structure
 
+```text
 bcm_wiper_validation/
 │
 ├── README.md
@@ -256,6 +257,15 @@ bcm_wiper_validation/
 ---
 
 ## Tools and Libraries
+
+- Python 3.11
+- python-can
+- cantools
+- Python standard libraries: threading, pathlib, csv, time
+
+---
+
+## Running a Test
 
 - Python 3.11
 - python-can
